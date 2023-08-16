@@ -13,16 +13,42 @@
   align-items: center;
 }
 
+/* Tittle "25 + 5 Clock" */
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Tablo Break+Time+Session */
+
 .tablo {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   gap: 20px;
 }
 
-.title {
-  font-size: 60px;
+/* Break + Session */
+
+.length-control {
   text-align: center;
-  padding-bottom: 20px;
+}
+
+#break-label, #session-label {
+  padding: 80px 20px 20px 20px;
+  font-size: 40px;
+}
+
+#break-length, #session-length {
+  font-size: 70px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .timer{
@@ -41,49 +67,24 @@
   padding-bottom: 10px;
 }
 
-.length-control {
-  text-align: center;
-}
-
-#break-label, #session-label {
-  padding: 80px 20px 20px 20px;
-}
-
-
-.button {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 20px;
-}
-
-.time-controler {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding-top: 10px;
-}
+/* Color < 01:00 */
 
 .red {
   color: rgb(136, 5, 5);
 }
 
+/* Color > 01:00 */
+
 .black {
   color:black;
-}
-
-#break-label, #session-label, #break-length, #session-length {
-  font-size: 40px;
 }
 
 .label {
   font-size: 60px;
 }
 
+/* Icon */
+
 i {
   font-size: 50px;
-}
-
-#break-length, #session-length {
-  font-size: 70px;
 }
