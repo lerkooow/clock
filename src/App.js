@@ -129,6 +129,7 @@ function App() {
             ) : (
               <i onClick={() => setPaused(true)} className="fa-solid fa-pause"></i>
             )}
+            <audio id="beep"></audio>
           </div>
           <div id="reset">
             <i onClick={() => reset()} className="fa-solid fa-arrows-rotate"></i>
