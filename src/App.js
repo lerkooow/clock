@@ -9,7 +9,6 @@ function App() {
   const [Break, setBreak] = useState(5);
   const [Session, setSession] = useState(25);
   const [paused, setPaused] = useState(true);
-  console.log("🚀 ~ file: App.js:10 ~ App ~ paused:", paused)
   const [currentTimer, setCurrentTimer] = useState('Session');
 
 
@@ -46,10 +45,11 @@ function App() {
   }
 
   function reset() {
-    setPaused(true);
-    setCurrentTimer('Session');
     setSession(25);
     setBreak(5);
+    setTime([Session, 0])
+    setPaused(true);
+    setCurrentTimer('Session');
     audio.pause();
   }
 
